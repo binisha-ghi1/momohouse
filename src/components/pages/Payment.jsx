@@ -73,14 +73,14 @@ function Payment ()  {
           type="hidden"
           id="success_url"
           name="success_url"
-          value="https://momohouse-ebon.vercel.app/success"
+          value="http://localhost:5173/success"
           required
         />
         <input
           type="hidden"
           id="failure_url"
           name="failure_url"
-          value= "https://momohouse-ebon.vercel.app/failure"
+          value= "http://localhost:5173/failure"
           required
         />
         <input
