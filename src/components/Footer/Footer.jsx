@@ -22,7 +22,7 @@ function Footer() {
                 momo
               </NavLink>
             </div>
-            <p className="text-black-600 ml-10 mt-4">
+            <p className="text-black-600 ml-10 font-medium mt-4">
               {" "}
               Lorem ipsum dolor sit amet consectetur adipisicing <br />
               elit. Incidunt voluptatum nesciunt voluptate illum <br />
@@ -33,18 +33,29 @@ function Footer() {
           </div>
 
           <div className="rounded-3xl w-96 p-5  flex flex-col items-center">
-            <h2 className="text-2xl font-semibold text-green-600">momos</h2>
-            <p className="text-black-600 mt-4"> About Us</p>
-            <p className="text-black-600">Our Menu</p>
-            <p className="text-black-600">Our Services</p>
-            <p className="text-black-600"> Contact Us</p>
+            <h2 className="text-2xl font-semibold  text-green-600">momos</h2>
+            <NavLink to='/about'>
+            <p className="text-black-600 font-medium hover:underline mt-4"> About Us</p>
+            </NavLink>
+
+            <NavLink to='/menu'>
+            <p className="text-black-600 font-medium hover:underline mt-2">Our Menu </p>
+            </NavLink>
+
+            <NavLink to='/services'>
+            <p className="text-black-600 font-medium hover:underline mt-2">Our Services </p>
+            </NavLink>
+
+            <NavLink to='/ontact '>
+            <p className="text-black-600  font-medium hover:underline mt-2">Contact Us </p>
+            </NavLink>
           </div>
 
           <div className=" rounded-3xl w-96 p-5  flex flex-col items-center pb-16">
             <h2 className="text-2xl font-semibold text-green-600">Legals</h2>
-            <p className="text-black-600 mt-4"> Terms & Conditions </p>
-            <p className="text-black-600">Privacy Policy</p>
-            <p className="text-black-600">Support</p>
+            <p className="text-black-600 hover:underline font-medium mt-4"> Terms & Conditions </p>
+            <p className="text-black-600  hover:underline font-medium mt-3">Privacy Policy</p>
+            <p className="text-black-600 hover:underline font-medium mt-3 ">Support</p>
           </div>
 
           <div className=" rounded-3xl w-96 p-5  flex flex-col items-center pb-16">
@@ -64,10 +75,20 @@ function Footer() {
                 <FaInstagram />
               </NavLink>
             </div>
+
             <div className="flex flex-row items-center gap-x-2 pt-4 text-2xl mt-2">
-              <FaLinkedin />
-              <FaTwitterSquare />
+
+              <NavLink to="https://www.linkedin.com/" target="_blank">
+              <FaLinkedin/>
+              </NavLink>
+
+              <NavLink to="https://x.com/" target="_blank">
+              <FaTwitterSquare/>
+              </NavLink>
+
+              <NavLink to="https://www.youtube.com/" target="_blank">
               <FaSquareYoutube />
+              </NavLink>
             </div>
           </div>
         </div>

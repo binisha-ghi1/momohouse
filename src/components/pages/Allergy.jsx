@@ -1,7 +1,8 @@
 import Footer from "../Footer/Footer";
 import { NavLink } from "react-router-dom";
 import star from '../../assets/images/star.png'
-import Sacn from '../../assets/images/Sacn.png'
+import QR from "../../assets/images/QR.png";
+import { FaMobileScreenButton } from "react-icons/fa6";
 
 const Allergy  = () => {
   return (
@@ -91,7 +92,13 @@ Quam ipsum viverra ac laoreet platea in praesent. Mattis molestie arcu nulla con
             <div>
             <h1 className='mb-4 ml-38 items-center justify-center flex  text-2xl font-bold  text-green-700'>Scan the QR to pay</h1>
             <p className='text-gray-500 mb-6'>You can also check the  allergy advice  using your phone as well</p>
-            <img src={Sacn} className='ml-36 '/>
+            <div >
+              <img src={QR} className=' ml-40 pb-4'/>
+              <div className="flex flex-row items-center justify-center mb-4">
+            <p className="text-xl ">Scan Me!</p>
+            <p ><FaMobileScreenButton /></p>
+        </div>
+        </div>
              </div>
              </div>
             

@@ -160,8 +160,8 @@ function Home() {
                   return (
                     <div
                       key={items.id}
-                      className="h-44 w-52 shadow-xl flex flex-col items-center
-                justify-center shadow-slate-300"
+                      className="h-44 w-52 shadow-xl rounded-lg flex flex-col items-center
+                justify-center shadow-slate-200"
                     >
                       <img src={items.image} className="h-16" alt="" />
                       <p>{items.name}</p>
@@ -176,12 +176,12 @@ function Home() {
                   return (
                     <div
                       key={items.id}
-                      className="h-44 w-52 shadow-xl flex flex-col items-center
+                      className="h-44 w-52 rounded-lg shadow-xl flex flex-col items-center
                    justify-center shadow-slate-300"
                     >
-                      <img src={items.image} className="h-16" alt="" />
-                      <p>{items.name}</p>
-                      <p>Rs.{items.caloriesPerServing}</p>
+                      <img src={items.image} className="h-24 rounded-md" alt="" />
+                      <p className="mt-2 text-sm font-medium items-center ml-6">{items.name}</p>
+                      <p className="font-bold mt-1">Rs.{items.caloriesPerServing}</p>
                     </div>
                   );
                 })}
@@ -239,7 +239,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex items-center mt-10 shadow-2xl shadow-slate-300 pl-10">
+      <div className="flex items-center mt-10 shadow-2xl shadow-slate-400 pl-10">
         <div className="w-[50%] mt-8  ml-40">
           <h1 className="text-4xl  font-bold text-black-800 ">
             200+ <span className="text-orange-600">Happy Customers</span>

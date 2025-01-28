@@ -53,8 +53,8 @@ function Navbar() {
             Logout
           </NavLink>
         ) : (
-          <div>
-            <NavLink  to="/login">Login</NavLink>
+          <div className=' flex gap-3'>
+            <NavLink to="/login">Login</NavLink>
             <NavLink to="/signUp">Sign Up</NavLink>
           </div>
         )}
@@ -64,9 +64,9 @@ function Navbar() {
       <div className=" flex  px-5 gap-x-5   items-center">
       <NavLink to="/cart">
       <span>
-      <FiShoppingCart className=" text-black relative   text-2xl  mt-6 w-8 h-6" />
+      <FiShoppingCart className=" text-black relative   text-2xl   w-8 h-6" />
       </span>
-      <span className="text-red-600 absolute top-1 right-88 text-lg "> {totalItems}</span>
+      <span className="text-orange-600 absolute top-1 w-6 right-88 text-lg "> {totalItems}</span>
       </NavLink>
 
 

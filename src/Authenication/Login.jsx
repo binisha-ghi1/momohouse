@@ -9,7 +9,7 @@ function Login() {
 
   return (
     <div>
-      <form className="max-w-sm mx-auto bg-white p-10 mt-14 rounded-lg shadow-2xl">
+      <form className="max-w-sm mx-auto bg-white p-10 mt-14 rounded-lg  mb-8 shadow-2xl">
         <h2 className="text-2xl font-bold mb-4 text-green-700 text-center">Login</h2>
         <div className="mb-4">
           <label htmlFor="email" className="block text-sm font-medium text-gray-700">

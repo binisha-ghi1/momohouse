@@ -20,7 +20,7 @@ function Payment ()  {
 
 
   return (
-    <div>
+    <div className="flex flex-col  items-center justify-center ml-80 mt-10 shadow-2xl shadow-slate-400  mb-8 h-80 w-[25%] font-medium pt-4 text-2xl">
         Payment
       <form
         action="https://rc-epay.esewa.com.np/api/epay/main/v2/form"
@@ -73,14 +73,14 @@ function Payment ()  {
           type="hidden"
           id="success_url"
           name="success_url"
-          value="https://momohouse-ebon.vercel.app//success"
+          value="https://momohouse-ebon.vercel.app/success"
           required
         />
         <input
           type="hidden"
           id="failure_url"
           name="failure_url"
-          value= "https://momohouse-ebon.vercel.app//failure"
+          value= "https://momohouse-ebon.vercel.app/failure"
           required
         />
         <input
@@ -97,8 +97,8 @@ function Payment ()  {
           value={hashInBase64}
           required
         />
-        <h1>total Amount:{total_amount}</h1>
-        <input  className="bg-orange-500 text-white p-2  rounded-lg w-44" value="Conform" type="submit" />
+        <h1 className="mt-4 mb-4">Total Amount : <span className="text-red-500">{total_amount}rs.</span></h1>
+        <input  className="bg-orange-500 text-white p-2 mb-4 mt-8 cursor-pointer rounded-lg w-54" value="Conform payment" type="submit" />
       </form>
     </div>
   );
