@@ -65,7 +65,7 @@ const Services = () => {
        <div className='flex  flex-col items-center justify-center mt-20 ml-20 mr-20 h-64 rounded-3xl bg-slate-300'>
         <h1 className='pb-16 text-2xl font-semibold'>Got any Quiries ?</h1>
         <p className=''>If you have any quiries send us a message. Our friendly Team would love to hear from you.</p><br/>
-        <NavLink to="/about">
+        <NavLink to="/contact">
               <Button title="Get In Touch " />
             </NavLink>
        </div>
