@@ -31,7 +31,7 @@ const cartReducer = (state, action) => {
       } else {
         const newCartItems = { ...action.payload, qty: 1 };
         const newCartItemsProducts = [...state.CartItems, newCartItems];
-        alert(newCartItems.name + "is added to cart");
+         alert(newCartItems.name + "is added to cart");
 
         return {
           ...state,
