@@ -22,7 +22,7 @@ const Allergy  = () => {
              </div>
            </div>
            <div >
-            <div className='flex flex-col justify-center border border-red-700 items-center mt-20'>
+            <div className='flex flex-col justify-center  items-center mt-20'>
               <h1 className='text-3xl text-black font-bold'><span className='text-orange-600'>Ingridient's</span> Used</h1>
              <div className='flex border-green-700 border-4 rounded-xl w-[40%] pl-10 mt-4'>
               <ul className=' list-disc'>

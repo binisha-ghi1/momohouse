@@ -12,7 +12,7 @@ function Footer() {
     <footer>
       <div>
         <div className="flex justify-around bg-gray-200 items-start w-full ">
-          <div className="rounded-3xl w-96 p-5  flex flex-col items-center pb-16">
+          <div className="rounded-3xl w-96 p-5  flex flex-col items-center pb-20">
             <div className="  flex items-center px-5 gap-x-2">
               <img src={logo} alt="logo" className="h-5 " />
               <NavLink
@@ -90,8 +90,10 @@ function Footer() {
               <FaSquareYoutube />
               </NavLink>
             </div>
-          </div>
+          </div> 
         </div>
+        
+        <p className=" flex items-center bg-gray-200  justify-center ">Copyright ©️2025 Everest Momo Pvt Ltd. All Rights Reserved.</p>
       </div>
     </footer>
   );
