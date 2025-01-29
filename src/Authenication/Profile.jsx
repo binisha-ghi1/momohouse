@@ -24,7 +24,7 @@ function Profile() {
           <div className="w-full flex justify-end p-4">
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className="border-2 border-black p-2 rounded-full transition"
+              className="border-2 border-black text-white p-2 rounded-full transition"
               style={{ backgroundColor: darkMode ? 'white' : 'black', color: darkMode ? 'black' : 'white' }}
             >
               {darkMode ? <FaMoon size={24} /> : <FaRegMoon size={24} />}
