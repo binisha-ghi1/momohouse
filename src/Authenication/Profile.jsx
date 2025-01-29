@@ -17,7 +17,7 @@ function Profile() {
   }
 
   return (
-    <div className={darkMode ? 'bg-white text-black' : 'bg-stone-200 text-black'}>
+    <div className={darkMode ? 'bg-black text-white' : 'bg-stone-200 text-black'}>
       {isAuthenticated ? (
         <>
          
@@ -29,7 +29,7 @@ function Profile() {
             >
               {darkMode ? <FaMoon size={24} /> : <FaRegMoon size={24} />}
             </button>
-          </div>
+          
           <div className="flex flex-col items-center bg-gray-200 mt-10 mb-10 p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-4">Welcome,</h2>
             <img className="rounded-full border-4 border-white mb-4" src={user.picture} alt="profile_picture" width="150" />
@@ -55,6 +55,7 @@ function Profile() {
                 </select>
               </div>
             </div>
+          </div>
           </div>
         </>
       ) : (
