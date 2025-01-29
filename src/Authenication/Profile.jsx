@@ -20,7 +20,7 @@ function Profile() {
     <div className={darkMode ? 'bg-black text-white' : 'bg-stone-200 text-black'}>
       {isAuthenticated ? (
         <div className="flex justify-center items-center min-h-screen">
-
+          {/* Dark Mode Toggle Button */}
           <div className="w-full flex justify-end p-4">
             <button
               onClick={() => setDarkMode(!darkMode)}
@@ -31,10 +31,11 @@ function Profile() {
             </button>
           </div>
 
-          <div className="flex flex-col items-center bg-gray-200 mt-10 mb-10 p-8 rounded-lg shadow-lg">
+          {/* Profile Content */}
+          <div className="flex flex-col items-center justify-center bg-gray-200 mt-10 mb-10 p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-4">Welcome,</h2>
             <img className="rounded-full border-4 border-white mb-4" src={user.picture} alt="profile_picture" width="150" />
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col justify-center items-center">
               <div className="font-bold text-2xl mb-2">
                 <p>Name: {user.name}</p>
               </div>
