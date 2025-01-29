@@ -21,7 +21,7 @@ function Profile() {
       {isAuthenticated ? (
         <>
          
-          <div className="w-full flex justify-end p-4">
+          <div className="w-full flex justify-center p-4">
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="border-2 border-black text-black p-2 rounded-full transition"
