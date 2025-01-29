@@ -80,7 +80,7 @@ function Payment ()  {
           type="hidden"
           id="failure_url"
           name="failure_url"
-          value= "https://momohouse-ebon.vercel.app/failure"
+          value= "https://momohouse-ebon.vercel.app/Failure"
           required
         />
         <input
