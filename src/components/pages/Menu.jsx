@@ -62,6 +62,8 @@ function Menu() {
                 <h1 className="mt-4 items-center font-medium text-center">{items.name}</h1>
                 <p className="mt-4 ml-20  mb-16 font-medium items-center">Rs.{items.caloriesPerServing}</p>
                 </NavLink>
+
+                
               </div>
             );
           })}
