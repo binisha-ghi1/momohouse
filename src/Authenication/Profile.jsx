@@ -4,7 +4,7 @@ import { FaRegMoon, FaMoon } from "react-icons/fa";
 
 function Profile() {
   const [darkMode, setDarkMode] = useState(false);
-  const [gender, setGender] = useState('');
+  const [gender, setGender] = useState(''); 
 
   const handleGenderChange = (e) => {
     setGender(e.target.value);
@@ -13,28 +13,27 @@ function Profile() {
   const { user, isAuthenticated, isLoading } = useAuth0();
 
   if (isLoading) {
-    return <div>Please log in to view your profile.</div>;
+    return <div className="text-center">Please log in to view your profile.</div>;
   }
 
   return (
-    <div className={darkMode ? 'bg-black text-white' : 'bg-stone-200 text-black'}>
+    <div className={darkMode ? 'bg-white text-black' : 'bg-stone-200 text-black'}>
       {isAuthenticated ? (
-        <div className="flex justify-center items-center min-h-screen">
-
+        <>
+         
           <div className="w-full flex justify-end p-4">
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className="border-2 border-black p-2 rounded-full transition"
+              className="border-2 border-black text-black p-2 rounded-full transition"
               style={{ backgroundColor: darkMode ? 'white' : 'black', color: darkMode ? 'black' : 'white' }}
             >
               {darkMode ? <FaMoon size={24} /> : <FaRegMoon size={24} />}
             </button>
           </div>
-
-          <div className="flex flex-col items-center justify-center bg-gray-200 mt-10 mb-10 p-8 rounded-lg shadow-lg">
+          <div className="flex flex-col items-center bg-gray-200 mt-10 mb-10 p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-4">Welcome,</h2>
             <img className="rounded-full border-4 border-white mb-4" src={user.picture} alt="profile_picture" width="150" />
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col items-center">
               <div className="font-bold text-2xl mb-2">
                 <p>Name: {user.name}</p>
               </div>
@@ -44,9 +43,9 @@ function Profile() {
 
               <div className="font-bold text-2xl mb-4">
                 <label className="mr-4">Gender:</label>
-                <select
+                <select 
                   className="p-2 rounded border-2 border-black"
-                  value={gender}
+                  value={gender} 
                   onChange={handleGenderChange}
                 >
                   <option value="">Select Gender</option>
@@ -57,7 +56,7 @@ function Profile() {
               </div>
             </div>
           </div>
-        </div>
+        </>
       ) : (
         <div className="text-center">Please log in to view your profile.</div>
       )}
@@ -66,7 +65,6 @@ function Profile() {
 }
 
 export default Profile;
-
 
 
 
