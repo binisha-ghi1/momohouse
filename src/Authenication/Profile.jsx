@@ -17,7 +17,7 @@ function Profile() {
   }
 
   return (
-    <div className={darkMode ? 'bg-black text-white' : 'bg-stone-200 text-black'}>
+    <div className={darkMode ? 'bg-black text-black' : 'bg-stone-200 text-black'}>
       {isAuthenticated ? (
         <>
          
