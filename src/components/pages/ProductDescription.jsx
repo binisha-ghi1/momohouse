@@ -24,6 +24,8 @@ function ProductDescription() {
     productData = await productData.json();
 
     setSingleProduct(productData);
+    console.log(productData)
+
   };
 
   useEffect(() => {
@@ -65,7 +67,7 @@ function ProductDescription() {
               <button
               
                onClick={()=>
-                dispatch({type:"AddtoCart",payload:singleProduct})}
+                dispatch({type:"ADD_TO_CART",payload:singleProduct})}
               
                
                className=" bg-blue-800 text-white  text-2xl  pl-8 pr-8  pb-4 pt-4 mt-8 mb-8">

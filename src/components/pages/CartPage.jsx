@@ -6,9 +6,10 @@ import { NavLink } from "react-router-dom";
 function CartPage  ()  {
   const { state, dispatch } = useContext(CartContext);
   const CartItems = state.CartItems;
+  
   const totalItems = state.CartItems.reduce((acc, item) => {
     return acc + item.qty * item.caloriesPerServing;
-  }, 1);
+  }, 0);
 
   // console.log(state)
   return (
@@ -117,7 +118,7 @@ function CartPage  ()  {
           </NavLink>
           <button
             onClick={() => {
-              dispatch({ type: "EmptyCart" });
+              dispatch({ type: "ClearCart" });
             }}
             className="bg-orange-600 text-white rounded p-2 w-52 mt-4 "
           >

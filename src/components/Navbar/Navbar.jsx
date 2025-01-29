@@ -29,7 +29,7 @@ function Navbar() {
 
 
   return (
-    <div className=" flex justify-around flex-wrap shadow-xl  shadow-slate-100  gap-x-16 font-bold items-center   ">
+    <div className=" flex mt-6 mb-4 justify-around flex-wrap shadow-xl  shadow-slate-100  gap-x-16 font-bold items-center   ">
       <div className="  flex items-center px-5 gap-x-5">
         <img src={logo} alt="logo" className="h-5" />
         <NavLink to="/" className="text-green-600  font-sans font-bold ">
@@ -66,7 +66,7 @@ function Navbar() {
       <span>
       <FiShoppingCart className=" text-black relative   text-2xl   w-8 h-6" />
       </span>
-      <span className="text-orange-600 absolute top-1 w-6 right-88 text-lg "> {totalItems}</span>
+      <span className="text-orange-600 absolute top-2 w-6 right-88 text-lg "> {totalItems}</span>
       </NavLink>
 
 
@@ -86,7 +86,7 @@ function Navbar() {
           </NavLink>
         <NavLink
           to="/contact"
-          className="bg-green-700 hover:bg-orange-600 rounded-3xl text-white px-4 py-2"
+          className="bg-green-700 hover:bg-green-800 rounded-3xl text-white px-4 py-2"
         >
           Contact
         </NavLink>
