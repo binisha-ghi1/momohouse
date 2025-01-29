@@ -23,14 +23,15 @@ const Allergy  = () => {
            </div>
            <div >
             <div className='flex flex-col justify-center  items-center mt-20'>
+
               <h1 className='text-3xl text-black font-bold'><span className='text-orange-600'>Ingridient's</span> Used</h1>
-             <div className='flex border-green-700 border-4 rounded-xl w-[40%] pl-10 mt-4'>
-              <ul className=' list-disc'>
+             <div className='flex   border-green-700 border-4 rounded-xl w-[40%] pl-10 '>
+              <ul className='  list-disc'>
                 <h1 className='text-black  font-medium text-2xl mb-4'>For The Dough</h1>
               <li>120 grams refined flour</li>
               <li>1/2 tsp baking powder</li>
               <li>1/2 tsp salt water (for kneading)</li>
-              </ul>
+              </ul> 
              </div>
              <div  className='flex border-green-700 border-4 rounded-xl w-[40%] pl-10 mt-4'>
               <ul className=' list-disc'>
@@ -43,7 +44,9 @@ const Allergy  = () => {
               <li>1/2 tsp soya sauce</li>
               <li>Salt</li>
               <li>1/4 tsp vinegar</li>
+              
               </ul>
+              
              </div>
              <div  className='flex  border-green-700 border-4 rounded-xl w-[40%] pl-10 mt-4'>
               <ul className=' list-disc'>

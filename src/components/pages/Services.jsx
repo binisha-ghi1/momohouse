@@ -68,13 +68,8 @@ const Services = () => {
         <NavLink to="/contact">
               <Button title="Get In Touch " />
             </NavLink>
-       </div>
-     
-       
-       </div>
-       
-       
-       
+       </div> 
+       </div> 
   )
 }
 
