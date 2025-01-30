@@ -3,7 +3,7 @@ import { GoMoon } from "react-icons/go";
 import { useState } from "react";
 
 function Profile() {
-  const { user, isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
+  const { user, isAuthenticated, isLoading, loginWithRedirect,Logout } = useAuth0();
   const [darkMode, setDarkMode] = useState(false);
 
   console.log(user, user);
