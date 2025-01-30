@@ -39,7 +39,7 @@ function Profile() {
               <p>Email: {user.email}</p>
               <button
                onClick={() => {
-                
+                logout();
               }}
                className="bg-teal-800 rounded-sm text-white h-10 w-36 mt-6">
                 Logout
