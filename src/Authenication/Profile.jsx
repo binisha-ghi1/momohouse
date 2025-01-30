@@ -28,7 +28,7 @@ function Profile() {
               <GoMoon
                 size="30"
                 className="ml-16 mb-10 cursor-pointer"
-                color={darkMode ? "yellow" : "black"} // Toggle color
+                color={darkMode ? "white" : "black"} // Toggle color
                 onClick={() => setDarkMode(!darkMode)} // Toggle dark mode
               />
             </div>
@@ -38,6 +38,10 @@ function Profile() {
               <p>Nickname: {user.nickname}</p>
               <p>Email: {user.email}</p>
               <button className="bg-teal-800 rounded-sm text-white h-10 w-36 mt-6">
+               onClick={() =>
+            Logout()
+          }
+           
                 Logout
               </button>
             </div>
