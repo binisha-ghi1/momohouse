@@ -3,7 +3,7 @@ import { GoMoon } from "react-icons/go";
 import { useState } from "react";
 
 function Profile() {
-  const { user, isAuthenticated, isLoading,logout } = useAuth0();
+  const { user, isAuthenticated, isLoading, loginWithRedirect,logout } = useAuth0();
   const [darkMode, setDarkMode] = useState(false);
 
   console.log(user, user);
@@ -33,7 +33,7 @@ function Profile() {
               />
             </div>
   
-            <div className="mt-5 flex flex-col  items-center justify-center gap-5">
+            <div className="mt-5 flex flex-col items-center justify-center gap-5">
               <h2>Name: {user.name}</h2>
               <p>Nickname: {user.nickname}</p>
               <p>Email: {user.email}</p>
