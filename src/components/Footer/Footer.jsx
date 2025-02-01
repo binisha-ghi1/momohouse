@@ -11,58 +11,54 @@ function Footer() {
   return (
     <footer>
       <div>
-        <div className="flex justify-around bg-gray-200 items-start w-full ">
-          <div className="rounded-3xl w-96 p-5  flex flex-col items-center pb-20">
+        <div className="flex justify-around bg-gray-200  items-start w-full ">
+          <div className="rounded-3xl w-96 p-5  flex flex-col items-center ">
             <div className="  flex items-center px-5 gap-x-2">
               <img src={logo} alt="logo" className="h-5 " />
               <NavLink
                 to="/"
-                className="text-green-600 text-2xl font-sans font-bold "
+                className="text-teal-800 text-2xl font-sans font-bold "
               >
                 momo
               </NavLink>
             </div>
-            <p className="text-black-600 ml-10 font-medium mt-4">
+            <p className="text-gray-600 ml-10 font-medium mt-4">
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing <br />
-              elit. Incidunt voluptatum nesciunt voluptate illum <br />
-              aliquid quaerat enim explicabo beatae pariatur?
-              <br /> Earum tenetur dolores labore rerum accusantium <br />
-              recusandae eius impedit voluptates sunt!
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, ipsum dolorum dolorem quas velit a recusandae iure quos molestiae laboriosam enim sapiente .
             </p>
           </div>
 
           <div className="rounded-3xl w-96 p-5  flex flex-col items-center">
-            <h2 className="text-2xl font-semibold  text-green-600">momos</h2>
+            <h2 className="text-2xl font-semibold  text-teal-800">momos</h2>
             <NavLink to='/about'>
-            <p className="text-black-600 font-medium hover:underline mt-4"> About Us</p>
+            <p className="text-gray-600 font-medium hover:underline mt-4"> About Us</p>
             </NavLink>
 
             <NavLink to='/menu'>
-            <p className="text-black-600 font-medium hover:underline mt-2">Our Menu </p>
+            <p className="text-gray-600 font-medium hover:underline mt-2">Our Menu </p>
             </NavLink>
 
             <NavLink to='/services'>
-            <p className="text-black-600 font-medium hover:underline mt-2">Our Services </p>
+            <p className="text-gray-600 font-medium hover:underline mt-2">Our Services </p>
             </NavLink>
 
             <NavLink to='/ontact '>
-            <p className="text-black-600  font-medium hover:underline mt-2">Contact Us </p>
+            <p className="text-gray-600  font-medium hover:underline mt-2">Contact Us </p>
             </NavLink>
           </div>
 
           <div className=" rounded-3xl w-96 p-5  flex flex-col items-center pb-16">
-            <h2 className="text-2xl font-semibold text-green-600">Legals</h2>
-            <p className="text-black-600 hover:underline font-medium mt-4"> Terms & Conditions </p>
-            <p className="text-black-600  hover:underline font-medium mt-3">Privacy Policy</p>
-            <p className="text-black-600 hover:underline font-medium mt-3 ">Support</p>
+            <h2 className="text-2xl font-semibold text-teal-800">Legals</h2>
+            <p className="text-gray-600 hover:underline font-medium mt-4"> Terms & Conditions </p>
+            <p className="text-gray-600  hover:underline font-medium mt-3">Privacy Policy</p>
+            <p className="text-gray-600 hover:underline font-medium mt-3 ">Support</p>
           </div>
 
           <div className=" rounded-3xl w-96 p-5  flex flex-col items-center pb-16">
-            <h2 className="text-2xl font-semibold text-green-600">
+            <h2 className="text-2xl font-semibold text-teal-800">
               Follow Us{" "}
             </h2>
-            <div className="flex flex-row items-center gap-x-2 pt-4 text-2xl">
+            <div className="flex  text-gray-600 flex-row items-center gap-x-2 pt-4 text-2xl">
               <NavLink to="https://www.facebook.com/" target="_blank">
                 <FaFacebook />
               </NavLink>
@@ -76,7 +72,7 @@ function Footer() {
               </NavLink>
             </div>
 
-            <div className="flex flex-row items-center gap-x-2 pt-4 text-2xl mt-2">
+            <div className="flex flex-row text-gray-600 items-center gap-x-2 pt-4 text-2xl mt-2">
 
               <NavLink to="https://www.linkedin.com/" target="_blank">
               <FaLinkedin/>
@@ -92,7 +88,6 @@ function Footer() {
             </div>
           </div> 
         </div>
-        
         <p className=" flex items-center bg-gray-200  justify-center ">Copyright ©️2025 Everest Momo Pvt Ltd. All Rights Reserved.</p>
       </div>
     </footer>

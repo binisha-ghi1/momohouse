@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { CartContext } from "../../context/CartProvider";
+import { FaRegStarHalf } from "react-icons/fa";
+import { TbStarFilled } from "react-icons/tb";
 
 import { useContext } from "react";
 
@@ -52,6 +54,8 @@ function ProductDescription() {
               </p>
               <p className="text-2xl font-medium text-orange-600  mt-4">
                 Ratings:    <span className="text-blue-600">{singleProduct.rating} </span>
+                <div className="flex flex-row mt-2 text-4xl font-extrabold text-yellow-400">
+                <TbStarFilled /><TbStarFilled /><TbStarFilled /> <FaRegStarHalf /> </div>
               </p>
               <div className="flex flex-row text-3xl font-medium gap-2 mt-4">
               </div>
@@ -83,18 +87,20 @@ function ProductDescription() {
       <div className="ml-40 mt-10  ">
         <h1 className="text-2xl font-bold mb-4">Product Description : 
         </h1>
-        <p className="text-xl font-medium"> Name: {singleProduct.name}
+        <p className=" font-medium"><span className=' text-xl italic font-bold '> Name: </span> {singleProduct.name}
        
         </p>
-        <p className="text-xl font-medium">
-          {" "}
-          Prepration Time : {singleProduct.prepTimeMinutes} minutes
+        <p className=" font-medium">
+          {" "} <span className="italic text-xl font-bold">
+          Prepration Time : </span>{singleProduct.prepTimeMinutes} minutes
         </p>
-        <p className="text-xl font-medium">
-          {" "}
-          Meal-Type : {singleProduct.mealType}
+        <p className="font-medium">
+          {" "}<span className="text-xl font-bold italic">
+          Meal-Type : </span>{singleProduct.mealType}
         </p>
-        <p className="text-xl font-medium"> Tags : {singleProduct.tags}</p>
+        <p className=" font-medium">
+          <span className="text-xl font-bold italic">
+           Tags : </span>{singleProduct.tags}</p>
         
       </div>
       

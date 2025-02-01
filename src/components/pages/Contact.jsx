@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div className="flex flex-col items-center justify-center px-4">
       <div className="text-center mb-10 mt-20">
-        <p className="text-3xl text-green-800 font-bold">Our Contact</p>
+        <p className="text-3xl text-teal-800 font-bold">Our Contact</p>
         <p className="text-2xl text-gray-500 mt-8">GET IN TOUCH</p>
         <h1 className="text-4xl mt-4">
           <span className="text-orange-600">Our Friendly Team</span> would love to hear from you
@@ -25,14 +25,14 @@ function Contact() {
         </div>
 
         <div className="rounded-3xl w-full md:w-1/3 p-5 shadow-2xl shadow-slate-300 flex flex-col items-center pb-10">
-          <MdPhoneInTalk className="text-4xl text-green-700 mb-2" />
+          <MdPhoneInTalk className="text-4xl text-teal-800 mb-2" />
           <h2 className="text-2xl font-semibold">Phone</h2>
           <p className="text-gray-600">
-            <span className="text-green-700">Mobile: </span>(+977) 9805689789
+            <span className="text-teal-800">Mobile: </span>(+977) 9805689789
           </p>
           <p className="text-gray-600">( +977 ) 9841275897</p>
           <p className="text-gray-600">
-            <span className="text-green-700">Tel: </span>01-4783972
+            <span className="text-teal-800">Tel: </span>01-4783972
           </p>
         </div>
 
@@ -40,10 +40,10 @@ function Contact() {
           <IoTime className="text-4xl text-blue-800 mb-2" />
           <h2 className="text-2xl font-semibold">Service Time</h2>
           <p className="text-gray-600">
-            <span className="text-green-700">Mon - Fri:</span> 8:00 AM - 8:00 PM
+            <span className="text-teal-800">Mon - Fri:</span> 8:00 AM - 8:00 PM
           </p>
           <p className="text-gray-600">
-            <span className="text-green-700">Sat - Sun:</span> Closed
+            <span className="text-teal-800">Sat - Sun:</span> Closed
           </p>
         </div>
       </div>
@@ -82,7 +82,7 @@ function Contact() {
                   type="text"
                   id="fname"
                   name="fname"
-                  className="border-2 border-green-700 rounded-md p-2"
+                  className="border-2 border-teal-800 rounded-md p-2"
                   placeholder="Enter your first name"
                 />
               </div>
@@ -94,7 +94,7 @@ function Contact() {
                   type="text"
                   id="lname"
                   name="lname"
-                  className="border-2 border-green-700 rounded-md p-2"
+                  className="border-2 border-teal-800 rounded-md p-2"
                   placeholder="Enter your last name"
                 />
               </div>
@@ -107,7 +107,7 @@ function Contact() {
               <select
                 id="query"
                 name="query"
-                className="border-2 border-green-700 rounded-md p-2 w-full"
+                className="border-2 border-teal-800 rounded-md p-2 w-full"
               >
                 <option value="">Choose</option>
                 <option value="support">Support</option>
@@ -124,7 +124,7 @@ function Contact() {
                 type="email"
                 id="email"
                 name="email"
-                className="border-2 border-green-700 rounded-md p-2 w-full"
+                className="border-2 border-teal-800 rounded-md p-2 w-full"
                 placeholder="Enter your email"
               />
             </div>
@@ -137,7 +137,7 @@ function Contact() {
                 type="text"
                 id="phone"
                 name="phone"
-                className="border-2 border-green-700 rounded-md p-2 w-full"
+                className="border-2 border-teal-800 rounded-md p-2 w-full"
                 placeholder="Enter your phone number"
               />
             </div>
@@ -150,7 +150,7 @@ function Contact() {
                 id="message"
                 name="message"
                 rows="4"
-                className="border-2 border-green-700 rounded-md p-2 w-full"
+                className="border-2 border-teal-800 rounded-md p-2 w-full"
                 placeholder="Write your message here"
               ></textarea>
             </div>

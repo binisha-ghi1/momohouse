@@ -17,7 +17,7 @@ function About  ()  {
     <div>
     <div className='flex items-center pl-10'>
        <div className="w-[50%]">
-      <p className="text-3xl text-green-800  font-bold ml-20"> <span className="italic">About Us </span></p><br></br><br></br>
+      <p className="text-3xl text-teal-800  font-bold ml-20"> <span className="italic">About Us </span></p><br></br><br></br>
       <p className='text-1xl text-gray-500 ml-20'>WE PRIDE OURSELF ON</p><br></br>
       <h1 className='text-4xl font-bold ml-20'><span className='text-orange-600'>Our authentic momo recipes </span><br>
       </br>
@@ -77,9 +77,9 @@ function About  ()  {
             <img src={Quote}/>
           </div>
 
-          <div className="flex flex-col items-center justify-center  mt-20 ">
+          <div className="flex flex-col items-center justify-center mb-10 mt-20 ">
             <h1 className="text-3xl font-bold">Meet The <span className="text-orange-600">Team</span></h1>
-            <p className="text-green-700 text-2xl font-semibold pb-4">Our talented members who  delivers only the best results</p>
+            <p className="text-teal-800 text-2xl font-semibold pb-4">Our talented members who  delivers only the best results</p>
             <div className="flex flex-row border gap-4">
               <img src={Team}/>
               <img src={Team2}/>

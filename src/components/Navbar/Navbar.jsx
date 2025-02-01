@@ -30,10 +30,10 @@ function Navbar() {
 
   return (
     <div className=" flex mt-6 mb-4 justify-around flex-wrap shadow-xl  shadow-slate-100  gap-x-16 font-bold items-center   ">
-      <div className="  flex items-center px-5 gap-x-5">
+      <div className="  flex items-center px-5 gap-2">
         <img src={logo} alt="logo" className="h-5" />
-        <NavLink to="/" className="text-green-600  font-sans font-bold ">
-          Momo
+        <NavLink to="/" className="text-teal-800  font-sans font-bold ">
+          momo
         </NavLink>
       </div>
 
@@ -86,7 +86,7 @@ function Navbar() {
           </NavLink>
         <NavLink
           to="/contact"
-          className="bg-green-700 hover:bg-green-800 rounded-3xl text-white px-4 py-2"
+          className="bg-teal-700 hover:bg-teal-800 rounded-3xl text-white px-4 py-2"
         >
           Contact
         </NavLink>

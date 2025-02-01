@@ -23,7 +23,7 @@ function Menu() {
   return (
     <div>
     <div>
-      <div className=" flex items-center justify-center  text-center text-4xl font-semibold text-green-700 mt-40">
+      <div className=" flex items-center justify-center  text-center text-4xl font-semibold text-teal-800 mt-40">
         <h1> <span className="italic">Our Menu </span></h1>
       </div>
       <div  className="flex items-center justify-center text-2xl font-medium mt-5 text-orange-600 ">
@@ -32,35 +32,35 @@ function Menu() {
       <div className="flex items-center justify-center text-2xl font-medium">
         <p>with a variety of dishes to all tastes and preferences.</p>
       </div>
-      <div className=" flex flex-box w-[50%] ml-[28%]  mt-10 mb-20 justify-center items-center bg-slate-200 shadow-3xl rounded-3xl shadow-slate-500">
+      <div className=" flex flex-box w-[60%]  ml-64 mt-10 mb-20 justify-center items-center bg-gray-200 shadow-2xl  shadow-slate-400">
       <div  className="items-center justify-center flex  flex-col mt-10 ">
-        <p className="text-2xl font-medium text-green-600">Scan the QR Code</p>
-        <p className="font-medium">You can also check the allergy advice using your phone as well</p>
+        <p className="text-2xl font-bold text-teal-800">Scan the QR Code</p>
+        <p className="font-bold mt-2">You can also check the allergy advice using your phone as well</p>
         <img src={QR} className='pl-30 pt-6 pb-4'/>
         
         <div className="flex flex-row items-center justify-center mb-6">
-        <p>Scan Me!</p>
-        <p ><FaMobileScreenButton /></p>
+        <p className='font-bold text-2xl'><span className="text-orange-600">Scan Me!</span></p>
+        <p className="font-bold text-2xl" ><FaMobileScreenButton /></p>
         </div>
       </div>
       </div>
     
-    <div className=" w-[70%] ">
+    <div className=" w-full ">
       {product.length > 0 ? (
-        <div className=" flex flex-wrap gap-10 w-[90%]  ml-60 pl-20  mt-40 justify-center items-center ">
+        <div className=" flex flex-wrap gap-10 mb-10  mt-40 justify-center items-center ">
           {product.map((items) => {
             return (
               <div
                 key={items.id}
-                className=" h-62 w-72 shadow-md flex  items-center
+                className=" h-62 w-72 shadow-xl flex  items-center
                    justify-center shadow-slate-500 rounded-3xl"
               >
                 <NavLink to={`/productDescription/${items.id}`}  >
-                <img className=" w-42 h-52 rounded-md justify-center items-center mt-16 ml-6" src={items.image}
+                <img className=" w-42 h-52 rounded-md justify-center items-center mt-10 ml-6" src={items.image}
                 alt="Product_Image"
                 />
-                <h1 className="mt-4 items-center font-medium text-center">{items.name}</h1>
-                <p className="mt-4 ml-20  mb-16 font-medium items-center">Rs.{items.caloriesPerServing}</p>
+                <h1 className="mt-4 items-center font-bold text-center">{items.name}</h1>
+                <p className="mt-4 ml-20  mb-10 font-bold text-red-600 items-center">Rs.{items.caloriesPerServing}</p>
                 </NavLink>
 
                 

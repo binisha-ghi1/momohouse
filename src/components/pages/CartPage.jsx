@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/CartProvider";
-import { AiTwotoneDelete } from "react-icons/ai";
+import { SlTrash } from "react-icons/sl";
 import { NavLink } from "react-router-dom";
 
 function CartPage  ()  {
@@ -13,24 +13,24 @@ function CartPage  ()  {
 
   // console.log(state)
   return (
-    <div className="flex justify-center mt-10">
+    <div className="flex justify-center  mt-10">
       <div className="w-[60%] ">
         {CartItems.length > 0 ? (
           <div>
-            <div className="p-2">
+            <div className="p-2 ">
               {CartItems.map((item) => {
                 return (
                   <div
-                    className="shadow-md my-5 rounded-md  p-3 shadow-stone-300 flex justify-between"
+                    className="shadow-md my-5 rounded-md border border-teal-800 p-3 shadow-stone-300 flex justify-between"
                     key={item.id}
                   >
                     <div className="flex">
-                      <img className="h-16" src={item.image} alt="" />
-                      <h1 className="ml-7">{item.name}</h1>
+                      <img className="h-32" src={item.image} alt="" />
+                      <h1 className="ml-7  flex font-bold items-center justify-between">{item.name}</h1>
                     </div>
 
                     <div>
-                      <p>{item.caloriesPerServing}</p>
+                      <p className=" flex mt-12 ml-2 font-bold text-red-500 justify-between items-center">Rs.{item.caloriesPerServing}</p>
                       <button
                         onClick={() => {
                           dispatch({
@@ -39,22 +39,23 @@ function CartPage  ()  {
                           });
                         }}
                       >
-                        <AiTwotoneDelete className="text-black text-3xl " />
+                        <SlTrash  className="bg-white text-teal-800 mt-4 ml-4 text-3xl " />
                       </button>
                     </div>
                     <div className=" w-24  space-x-2 mt-3 ">
                       <button
+
                         onClick={() => {
                           dispatch({
                             type: "Decrement",
                             payload: { id: item.id },
                           });
                         }}
-                        className="bg-white rounded w-7"
+                        className="bg-gray-100 rounded w-7 mt-10 text-2xl font-medium"
                       >
                         -
                       </button>
-                      <span>{item.qty}</span>
+                      <span className="text-xl font-medium">{item.qty}</span>
                       <button
                         onClick={() => {
                           dispatch({
@@ -62,7 +63,7 @@ function CartPage  ()  {
                             payload: { id: item.id },
                           });
                         }}
-                        className="bg-white rounded w-7"
+                        className="bg-gray-100 rounded w-7 text-2xl font-medium"
                       >
                         +
                       </button>
@@ -98,7 +99,7 @@ function CartPage  ()  {
             <br /> any questions, feel free to contact us.
           </p>
           <p className="text-2xl font-medium mt-4">
-            Total Price: &nbsp;
+            Total Price:  &nbsp;
             <button
               className="font-medium text-orange-600 mb-6"
               onClick={() => {
@@ -111,7 +112,7 @@ function CartPage  ()  {
           <NavLink
             to="/payment"
             state={[...CartItems]}
-            className="bg-green-700 text-white rounded p-2 w-52 "
+            className="bg-teal-800 text-white rounded p-2 w-52 "
           >
             {" "}
             Proceed to Checkout ({totalItems}){" "}
