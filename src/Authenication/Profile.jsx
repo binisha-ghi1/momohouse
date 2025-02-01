@@ -17,10 +17,10 @@ function Profile() {
     >
       {isAuthenticated ? (
         <div
-          className={`border-2 rounded-xl h-96 shadow-2xl p-2 font-bold mt-16 transition-colors duration-300 ${darkMode ? "bg-gray-200 text-white" : "bg-white text-black"
+          className={`border-2 rounded-xl h-96 shadow-2xl p-2 font-bold mt-16 transition-colors duration-300 ${darkMode ? "bg-gray-800 text-white" : "bg-white text-black"
             }`}
         >
-          <div className="flex h-64">
+          <div className="flex">
             <img
               src={user.picture}
               alt="profile_picture"
@@ -28,15 +28,16 @@ function Profile() {
               <GoMoon
                 size="30"
                 className="ml-16 mb-10 cursor-pointer"
-                color={darkMode ? "white" : "black"}
-                onClick={() => setDarkMode(!darkMode)} 
+                color={darkMode ? "white" : "black"} // Toggle color
+                onClick={() => setDarkMode(!darkMode)} // Toggle dark mode
               />
             </div>
   
-            <div className="mt-5 flex flex-col items-center justify-center gap-5">
+            <div className="mt-5 flex flex-col  items-center justify-center gap-5">
               <h2>Name: {user.name}</h2>
               <p>Nickname: {user.nickname}</p>
               <p>Email: {user.email}</p>
+              
               <button
                onClick={() => {
                 logout();
