@@ -20,7 +20,8 @@ function Payment ()  {
 
 
   return (
-    <div className="flex flex-col  items-center justify-center ml-80 mt-10 shadow-2xl shadow-slate-400  mb-8 h-80 w-[25%] font-medium pt-4 text-2xl">
+    <div className="flex justify-center items-center">
+    <div className="flex flex-col  items-center justify-center  mt-10 shadow-2xl shadow-slate-400 w-80  mb-8 h-80  font-medium pt-4 text-2xl">
         Payment
       <form
         action="https://rc-epay.esewa.com.np/api/epay/main/v2/form"
@@ -97,9 +98,13 @@ function Payment ()  {
           value={hashInBase64}
           required
         />
-        <h1 className="mt-4 mb-4">Total Amount : <span className="text-red-500">{total_amount}rs.</span></h1>
-        <input  className="bg-orange-500 text-white p-2 mb-4 mt-8 cursor-pointer rounded-lg w-54" value="Conform payment" type="submit" />
+        
+        <h1 className="mt-4 mb-4">Total Amount : <span className="text-red-500">Rs.{total_amount}</span></h1>
+        <input  className="bg-orange-500 text-white  p-2 ml-4 mb-4 mt-8 cursor-pointer rounded-lg w-54" value="Confirm payment" type="submit" />
+        
       </form>
+      
+    </div>
     </div>
   );
 }

@@ -9,9 +9,8 @@ import logo from "../../assets/images/logo.jpg";
 
 function Footer() {
   return (
-    <footer>
-      <div>
-        <div className="flex justify-around bg-gray-200  items-start w-full ">
+    <footer> 
+        <div className="  flex justify-around items-start w-full  ">
           <div className="rounded-3xl w-96 p-5  flex flex-col items-center ">
             <div className="  flex items-center px-5 gap-x-2">
               <img src={logo} alt="logo" className="h-5 " />
@@ -47,14 +46,14 @@ function Footer() {
             </NavLink>
           </div>
 
-          <div className=" rounded-3xl w-96 p-5  flex flex-col items-center pb-16">
+          <div className=" rounded-3xl w-96 p-5  flex flex-col items-center ">
             <h2 className="text-2xl font-semibold text-teal-800">Legals</h2>
             <p className="text-gray-600 hover:underline font-medium mt-4"> Terms & Conditions </p>
             <p className="text-gray-600  hover:underline font-medium mt-3">Privacy Policy</p>
             <p className="text-gray-600 hover:underline font-medium mt-3 ">Support</p>
           </div>
 
-          <div className=" rounded-3xl w-96 p-5  flex flex-col items-center pb-16">
+          <div className=" rounded-3xl w-96 p-5  flex flex-col items-center ">
             <h2 className="text-2xl font-semibold text-teal-800">
               Follow Us{" "}
             </h2>
@@ -88,8 +87,9 @@ function Footer() {
             </div>
           </div> 
         </div>
-        <p className=" flex items-center bg-gray-200  justify-center ">Copyright ©️2025 Everest Momo Pvt Ltd. All Rights Reserved.</p>
-      </div>
+        <p className=" flex items-center justify-center  ">Copyright ©️2025 Everest Momo Pvt Ltd. All Rights Reserved.</p>
+
+      
     </footer>
   );
 }

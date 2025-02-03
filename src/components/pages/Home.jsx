@@ -154,7 +154,7 @@ function Home() {
             </button>
           </div>
 
-          <div className=" w-full  ">
+          <div className=" w-[80%] ">
             {filterProduct.length > 0 ? (
               <div className="flex flex-wrap gap-10 justify-center items-center py-10 ">
                 {filterProduct.map((items) => {
@@ -212,7 +212,7 @@ function Home() {
             </NavLink>
           </div>
         </div>
-        <div className="flex justify-center ml-20 mt-16">
+        <div className="flex justify-center ml-20 mt-20">
           <h1 className="text-3xl font-bold text-black">
             {" "}
             <span className="text-orange-600">We Offer People</span> The Service
@@ -220,7 +220,7 @@ function Home() {
           </h1>
         </div>
         <img src={im} className="w-[1440px] object-cover mt-20" />
-        <div className="flex justify-around items-start  max-w-4xl ml-40">
+        <div className="flex justify-around items-start ml-40 mr-40 ">
           <div>
             <img src={Quality} className="mt-20 ml-20 flex " />
             <h1 className="mt-2 ml-20 text-2xl text-black">Quality Food</h1>
@@ -236,7 +236,7 @@ function Home() {
               Get the best food for <br/>all your private
               <br /> parties and gatherings
               <br/> <br/> <br/>
-              <NavLink className to="/service">
+              <NavLink className to="/services">
               <Button title="Explore Our Services " />
             </NavLink>
             </p>
@@ -417,13 +417,8 @@ function Home() {
             </form>
           </div>
           </div>
-
         
-    
-
-
-        
-        <div className="w-full mt-40 ml-40  mb-2 md:w-1/2">
+        <div className="w-full mt-40  mb-2 ">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10488.777485450102!2d85.34282895596081!3d27.670556269639885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1737472831890!5m2!1sen!2snp"
             width="100% "
@@ -435,12 +430,11 @@ function Home() {
             className="rounded-l-lg"
           ></iframe>
         
-      
+
       </div>
       </div>
      
           
-    
   );
 }
 

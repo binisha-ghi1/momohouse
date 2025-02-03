@@ -14,8 +14,8 @@ function Contact() {
         </h1>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-around items-start w-full max-w-6xl space-y-8 md:space-y-0">
-        <div className="rounded-3xl w-full md:w-1/3 p-5 shadow-2xl shadow-slate-300 flex flex-col items-center pb-10">
+      <div className="flex flex-col gap-4 md:flex-row justify-around items-start w-full max-w-6xl space-y-8 md:space-y-0">
+        <div className="rounded-3xl w-full md:w-1/3 p-5 shadow-xl shadow-slate-300 flex flex-col items-center pb-10">
           <FaLocationDot className="text-4xl text-orange-600 mb-2" />
           <h2 className="text-2xl font-semibold">Location</h2>
           <p className="text-gray-600 text-center">
@@ -24,7 +24,7 @@ function Contact() {
           </p>
         </div>
 
-        <div className="rounded-3xl w-full md:w-1/3 p-5 shadow-2xl shadow-slate-300 flex flex-col items-center pb-10">
+        <div className="rounded-3xl w-full md:w-1/3 p-5 shadow-xl shadow-slate-300 flex flex-col items-center pb-10">
           <MdPhoneInTalk className="text-4xl text-teal-800 mb-2" />
           <h2 className="text-2xl font-semibold">Phone</h2>
           <p className="text-gray-600">
@@ -36,7 +36,7 @@ function Contact() {
           </p>
         </div>
 
-        <div className="rounded-3xl w-full md:w-1/3 p-5 shadow-2xl shadow-slate-300 flex flex-col items-center pb-10">
+        <div className="rounded-3xl w-full md:w-1/3 p-5 shadow-xl shadow-slate-300 flex flex-col items-center pb-10">
           <IoTime className="text-4xl text-blue-800 mb-2" />
           <h2 className="text-2xl font-semibold">Service Time</h2>
           <p className="text-gray-600">

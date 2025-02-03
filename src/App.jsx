@@ -21,7 +21,8 @@ import Profile from "./Authenication/Profile";
 
 const App = () => {
   return (
-    <div>
+    <>   
+     <div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -46,8 +47,12 @@ const App = () => {
         
       </Routes>
 
-      <Footer />
     </div>
+    <div className="mt-10">
+      <Footer/>
+    </div>
+    </>
+
   );
 };
 

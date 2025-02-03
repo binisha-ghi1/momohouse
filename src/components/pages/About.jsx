@@ -51,23 +51,23 @@ function About  ()  {
             </div>
           </div>
 
-         <div  className='flex items-center pl-20 ml-20 mr-20  mt-10 gap-40'>
+         <div  className='flex   ml-40   mt-20 gap-40'>
          <div className="h-[20%] justify-center">
               <img src={hand}/>
               <img src={red} className="h-40 relative bottom-24  left-[75%]  "/>
             </div>
-            <div className="flex-item-end mb-[40%]">
-            <p className="text-2xl  font-bold ">Taste the difference with <br/><span className="text-orange-600"> our handcrafted momos</span></p>
+            <div className="flex-item-end ">
+            <p className="text-2xl relative -top-3 font-bold ">Taste the difference with <br/><span className="text-orange-600"> our handcrafted momos</span></p>
             <p className="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing<br/> elit. Molestias error distinctio quasi dignissimos<br/> impedit itaque asperiores  cupiditate architecto<br/> minus quod laborum amet iure quas saepe.</p>
             </div>
          </div>
-         <div  className='flex  items-center  ml-40  mt-20 gap-40'>
+         <div  className='flex  ml-40  gap-40'>
            <div>
-            <p className="text-2xl font-bold ">Our momos are the<br/> perfect<span className="text-orange-600">  blend of tradition<br/> <span className="text-black">and</span> innovation</span></p>
-            <p className=" mt-10">Lorem ipsum dolor sit amet consectetur, adipisicing<br/> elit. Molestias error distinctio quasi dignissimos<br/> impedit itaque asperiores  cupiditate architecto<br/> minus quod laborum amet iure quas saepe.</p>
+            <p className="text-2xl h-[40%]  font-bold ">Our momos are the<br/> perfect<span className="text-orange-600">  blend of tradition<br/> <span className="text-black">and</span> innovation</span></p>
+            <p className="relative -top-28 ">Lorem ipsum dolor sit amet consectetur, adipisicing<br/> elit. Molestias error distinctio quasi dignissimos<br/> impedit itaque asperiores  cupiditate architecto<br/> minus quod laborum amet iure quas saepe.</p>
            </div>
            <div className="flex-item-center">
-            <div className="h-[20%]   justify-end">
+            <div className="h-[20%] justify-end">
               <img src={smile}/>
               <img src={white} className="h-40 relative bottom-24  right-[26%] "/>
             </div>
