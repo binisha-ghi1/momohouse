@@ -17,7 +17,7 @@ function Profile() {
     >
       {isAuthenticated ? (
         <div
-          className={`border-2 rounded-xl h-screen mb-4 shadow-2xl p-2 font-bold mt-16 transition-colors duration-300 ${darkMode ? "bg-gray-800 text-white" : "bg-white text-black"
+          className={`border-2 rounded-xl h-fit mb-4 shadow-2xl p-2 font-bold mt-16 transition-colors duration-300 ${darkMode ? "bg-gray-800 text-white" : "bg-white text-black"
             }`}
         >
           <div className="flex">
